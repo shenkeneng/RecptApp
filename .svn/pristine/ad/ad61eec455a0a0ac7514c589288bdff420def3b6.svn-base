@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_circle_rectangle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_context"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/master_account"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            <EditText
+                android:id="@+id/et_master_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:textSize="@dimen/order_info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/master_psw"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            <EditText
+                android:id="@+id/et_master_psw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:textSize="@dimen/order_info" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/frxs_gray_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/frxs_white"
+            android:padding="@dimen/fab_margin"
+            android:text="@string/confirm"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="match_parent"
+            android:background="@color/frxs_gray_dark" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/frxs_white"
+            android:padding="@dimen/fab_margin"
+            android:text="@string/cancel"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

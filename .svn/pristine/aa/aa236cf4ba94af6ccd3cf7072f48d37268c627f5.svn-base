@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ActionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frxs_gray_light">
+
+        <include layout="@layout/view_search_bar" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/pending_rcv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/pending_receive_order"
+                android:textColor="@color/themeColor"
+                android:textSize="@dimen/shop_name"
+                android:background="@color/frxs_white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/frxs_gray_dark"/>
+
+            <com.frxs.core.widget.PtrFrameLayoutEx
+                android:id="@+id/ptr_frame_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:id="@+id/pending_receive_order_elv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_order_number"
+                android:dividerHeight="1px"
+                android:divider="@color/frxs_gray_dark"/>
+
+            </com.frxs.core.widget.PtrFrameLayoutEx>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/search_result_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <com.frxs.core.widget.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/frxs_gray_dark"/>
+
+    </FrameLayout>
+
+</LinearLayout>

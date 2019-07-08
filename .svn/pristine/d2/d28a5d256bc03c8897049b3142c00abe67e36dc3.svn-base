@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ActionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frxs_gray_light">
+
+        <include layout="@layout/view_search_bar3" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/product_list_fragment"
+        android:name="com.frxs.receipt.fragment.ProductListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

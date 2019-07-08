@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99232323"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_circle_rectangle"
+        android:layout_margin="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="@dimen/order_info"
+            android:text="@string/finish_receive_confirm2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/frxs_gray_dark"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/confirm"
+                android:textStyle="bold"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info"
+                android:background="@color/frxs_white"
+                android:padding="@dimen/fab_margin"/>
+
+            <View
+                android:layout_width="0.5px"
+                android:layout_height="match_parent"
+                android:background="@color/frxs_gray_dark"/>
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textStyle="bold"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info"
+                android:background="@color/frxs_white"
+                android:padding="@dimen/fab_margin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

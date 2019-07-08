@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ActionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frxs_gray_light">
+
+        <include layout="@layout/view_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/frxs_gray_dark" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/frxs_white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/take_picture_hint"
+                android:drawableLeft="@mipmap/icon_hint"
+                android:drawablePadding="3dp"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:background="@color/frxs_white"
+                android:layout_marginBottom="@dimen/common_padding"/>
+
+            <com.frxs.receipt.widget.LinePathView
+                android:id="@+id/line_path_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_bg_item"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_clean"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_btn"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="清除"
+                    android:textColor="@color/frxs_white"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_red_btn"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="拍照"
+                    android:textColor="@color/frxs_white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

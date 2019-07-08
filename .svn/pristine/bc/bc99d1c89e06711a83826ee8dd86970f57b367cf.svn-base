@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ActionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frxs_gray_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:padding="@dimen/common_margin"
+                android:text="@string/recp_hint"
+                android:layout_marginTop="@dimen/common_margin"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textSize="18dp"/>
+
+            <include layout="@layout/view_search_bar4" />
+
+            <TextView
+                android:id="@+id/bt_search"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:layout_marginRight="@dimen/common_margin"
+                android:background="@color/frxs_red"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="搜索"
+                android:textColor="@color/frxs_white"
+                android:layout_marginTop="@dimen/common_margin"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/frxs_gray_dark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.frxs.core.widget.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding"
+            android:background="@color/frxs_white"
+            android:text="- 正在收货订单 -"
+            android:gravity="center"
+            android:layout_below="@+id/search_keywords_tv"/>
+
+        <com.frxs.core.widget.PtrFrameLayoutEx
+            android:id="@+id/ptr_frame_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title">
+
+            <ListView
+                android:id="@+id/order_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/frxs_gray_light"
+                android:dividerHeight="10dp" />
+
+        </com.frxs.core.widget.PtrFrameLayoutEx>
+
+    </RelativeLayout>
+
+</LinearLayout>

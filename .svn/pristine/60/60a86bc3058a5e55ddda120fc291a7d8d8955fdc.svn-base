@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_bg_item"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_id_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="20170520235654323"
+                android:textColor="@color/frxs_black_light"
+                android:textSize="@dimen/fab_margin" />
+
+            <TextView
+                android:id="@+id/order_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/supplier_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="0000110-湖南旺盛酒业贸易有限公司"
+                    android:textColor="@color/frxs_black_dark"
+                    android:textSize="@dimen/order_info" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/total_row_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_row"
+                        android:textColor="@color/frxs_black"
+                        android:textSize="@dimen/order_info"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_product_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/total_num"
+                        android:textColor="@color/frxs_black"
+                        android:textSize="@dimen/order_info"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/start_receive_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_red_btn"
+                android:focusable="false"
+                android:padding="@dimen/common_padding"
+                android:text="@string/start_receive"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/shop_name"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/common_margin"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@color/frxs_gray_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remark"
+                android:textColor="@color/frxs_black_light"
+                android:textSize="@dimen/fab_margin" />
+
+            <TextView
+                android:id="@+id/remark_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="备注内容"
+                android:textColor="@color/frxs_black_dark"
+                android:textSize="@dimen/order_info" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.lid.lib.LabelTextView
+        android:id="@+id/label_tv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        app:label_backgroundColor="@color/themeColor"
+        app:label_height="40dp"
+        app:label_orientation="RIGHT_TOP"
+        app:label_text="@string/receiving" />
+
+</RelativeLayout>

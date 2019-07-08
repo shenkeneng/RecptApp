@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">收货</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="close">关闭</string>
+    <string name="confirm_received">确定已收</string>
+    <!-- 在线更新 -->
+    <string name="updade_content">最新版本：%1$s \n\n更新内容\n%2$s</string>
+    <string name="update_title">发现版本更新</string>
+    <string name="update_ok">立即更新</string>
+    <string name="update_cancel">稍后更新</string>
+
+    <!--网络请求提示-->
+    <string name="network_request_failed">网络请求失败，请重试</string>
+
+    <!--LoginActivity-->
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tips_login_info">用户名或密码错误</string>
+    <string name="tips_null_account">您还没有填写账号</string>
+    <string name="tips_null_password">您还没有填写密码</string>
+    <string name="tips_input_limit">密码只能由数字、字母组成</string>
+    <string name="tips_new_password_error">新密码确认错误</string>
+    <string name="tips_environment">请选择环境[当前是：%1$s]</string>
+    <string name="str_psw">frxs@123</string>
+
+    <!--UpdatePswActivity-->
+    <string name="title_update_pwd">修改密码</string>
+    <string name="hint_old_password">请输入原密码</string>
+    <string name="hint_new_password">请输入新密码</string>
+    <string name="hint_repeat_new_password">请再次输入新密码</string>
+
+    <!--BottomTabActivity-->
+    <string name="receiving">正在收货</string>
+    <string name="pending_receive">等待收货</string>
+    <string name="pending_rcv_order">等待收货订单</string>
+    <string name="pending_receive_order">等待收货订单：%1$d个</string>
+    <string name="receiving_order">正在收货订单</string>
+    <string name="receiving_product_list">正在收货商品清单</string>
+    <string name="finish_receive">完成收货</string>
+    <string name="total_row">总行数：%1$d</string>
+    <string name="total_num">总数量：%1$s</string>
+    <string name="total_product_row">总行数：%1$d</string>
+    <string name="total_product_num">总数量：%1$s</string>
+    <string name="total_product_row_red"><Data><![CDATA[总行数：<font color="#e60012">%1$d</font>]]> </Data></string>
+    <string name="total_product_num_red"><Data><![CDATA[总数量：<font color="#e60012">%1$s</font>]]> </Data></string>
+    <string name="received_product_num">已收货：%1$s</string>
+    <string name="start_receive">开 始\n收 货</string>
+    <string name="product_code">编码：%1$s</string>
+    <string name="product_barcode">%1$s</string>
+    <string name="product_location">货位号：%1$s</string>
+    <string name="product_package_num">包装数：%1$.2f</string>
+    <string name="unreceived">未收货</string>
+    <string name="received">已收货</string>
+    <string name="product_num">%1$d件</string>
+    <string name="logout">退出当前账号</string>
+    <string name="title_mine">关于我</string>
+    <string name="receipt_details">收货明细</string>
+    <string name="update_password">用户修改密码</string>
+    <string name="version_id">版本号</string>
+    <string name="exit_query">是否退出收货员？</string>
+    <string name="search_order_prompt">输入订单编号、供应商编号、供应商名称</string>
+    <string name="search_product_prompt">输入商品名称、商品条码、编码</string>
+    <string name="remark">备注</string>
+    <string name="change_quantity">修改数量</string>
+    <string name="user_name_key">姓名：</string>
+    <string name="TEL">TEL：</string>
+    <string name="version">Ver %1$s</string>
+    <string name="search">搜索</string>
+    <string name="recp_hint">- 扫描收货 -</string>
+
+    <!--PendingOrderListActivity-->
+    <string name="pending_search_result">“%1$s”搜索结果</string>
+    <string name="delete">刪除</string>
+    <string name="order_num_0">订单数量：%1$s</string>
+    <string name="order_num_1">订单数量：%1$s%2$s</string>
+    <string name="package_num"> 包装数量：%1$s</string>
+    <string name="received_num">已收数量：%1$s%2$s</string>
+    <string name="received_detail">已收明细</string>
+    <string name="actual_received_num_key">实收数量：</string>
+    <string name="current_receipt_key">本次收货：</string>
+    <string name="actual_received_remark">收货备注：</string>
+    <string name="switch_unit">切换单位</string>
+    <string name="modify_receiving_status">请先修改收货状态</string>
+    <string name="production_date"> 生产日期：</string>
+    <string name="due_date"> 到期日期：</string>
+    <string name="batch_number"> 出厂批次：</string>
+
+    <!--OrderDetailActivity-->
+    <string name="order_detail">订单详情</string>
+    <string name="total">合计：</string>
+    <string name="actual_received_num">实收数量：%1$s</string>
+    <string name="order_num">（订货数量：%1$s）</string>
+    <string name="item_actual_received_num">实收：%1$s%2$s</string>
+    <string name="item_order_num">订货：%1$s%2$s</string>
+
+    <string name="finish_receive_cancel">订单商品未全部收货，请先全部完成收货</string>
+    <string name="finish_receive_confirm2">确认收货完成？</string>
+    <string name="no_need_switch_unit_prompt">只有一个单位，无法切换</string>
+    <string name="forbid_switch_unit_prompt">已开始收货的商品不能切换单位</string>
+    <string name="over_receive_cancel">是否确认终止【%1$s】%2$s代购订单收货？</string>
+    <string name="no_received_record">您还没有收货记录</string>
+
+    <string name="scan">扫一扫</string>
+    <string name="hasCameraPermission">收货应用需要相机权限</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--dialog_master-->
+    <string name="dialog_context">此商品修改数量超过代购数量，需组长确认通过：</string>
+    <string name="master_account">组长账号：</string>
+    <string name="master_psw">组长密码：</string>
+
+    <!--LookSignatureActivity-->
+    <string name="sign_time">签名时间：%1$s</string>
+    <string name="sign_device_id">签名设备ID：%1$s</string>
+    <string name="gps">GPS坐标：%1$f，%2$f</string>
+    <string name="sign_photo">签名现场图片：</string>
+    <string name="look_sign">查看签名</string>
+    <string name="sign">电子签名</string>
+    
+    <!--ReceivedOrderListFragment-->
+    <string name="all">查看全部</string>
+    <string name="unsigned">未签名</string>
+    <string name="signed">已签名</string>
+    <string name="take_picture_hint">签名与现场照片仅用于收货电子签名，阿必达平台不会将照片另做他用。</string>
+    <string name="again">重拍</string>
+
+</resources>

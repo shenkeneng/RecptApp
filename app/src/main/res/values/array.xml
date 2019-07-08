@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <integer-array name="google_colors">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/green</item>
+    </integer-array>
+
+    <string-array name="select_time">
+        <item>全部消息</item>
+        <item>最近一周</item>
+        <item>最近一个月</item>
+        <item>最近三个月</item>
+        <item>最近半年</item>
+    </string-array>
+
+    <string-array name="selector_pick_type">
+        <item>拍照</item>
+        <item>从相册中选择</item>
+    </string-array>
+
+    <string-array name="run_environments">
+        <item>线上环境[%1$s]</item>
+        <item>测试环境[%1$s]</item>
+        <item>预发布环境[%1$s]</item>
+    </string-array>
+
+</resources>

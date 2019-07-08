@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ActionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frxs_gray_light">
+
+        <include layout="@layout/view_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:layout_marginBottom="@dimen/common_margin"
+        android:background="@color/frxs_gray_dark"/>
+
+    <include layout="@layout/view_search_bar"/>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_red_btn"
+        android:focusable="false"
+        android:layout_margin="40dp"
+        android:text="@string/search"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/shop_name"
+        android:textStyle="bold" />
+
+</LinearLayout>

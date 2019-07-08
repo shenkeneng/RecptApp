@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ActionBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frxs_gray_light">
+
+        <include layout="@layout/view_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/frxs_gray_dark" />
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="@drawable/shape_bg_item"
+        android:layout_marginTop="@dimen/capsule_btn_height"
+        android:layout_marginBottom="@dimen/capsule_btn_height"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="确认"
+        android:textSize="18sp"
+        android:textColor="@color/frxs_white"
+        android:background="@drawable/selector_red_btn"
+        android:padding="@dimen/common_padding"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

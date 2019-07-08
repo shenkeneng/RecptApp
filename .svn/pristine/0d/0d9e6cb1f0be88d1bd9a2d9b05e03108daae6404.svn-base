@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_circle_rectangle"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/supplier_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:text="供应商名称"
+        android:textColor="@color/frxs_gray"
+        android:textSize="@dimen/order_info" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_margin">
+
+        <TextView
+            android:id="@+id/order_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_num_1"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info" />
+
+        <TextView
+            android:id="@+id/product_package_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_num_tv"
+            android:layout_marginTop="@dimen/common_margin"
+            android:text="@string/package_num"
+            android:textColor="@color/frxs_black_light"
+            android:textSize="@dimen/order_info" />
+
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/switch_unit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_circle_rectangle"
+            android:padding="@dimen/common_margin"
+            android:text="@string/switch_unit"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/shop_name" />
+
+        <LinearLayout
+            android:id="@+id/received_num_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/product_package_tv"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/received_num_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/received_num"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info"/>
+
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/received_detail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_circle_rectangle"
+                android:padding="@dimen/common_margin"
+                android:text="@string/received_detail"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/shop_name"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_recp_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/received_num_ll"
+            android:layout_marginTop="@dimen/common_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_receipt_key"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            <com.frxs.receipt.widget.CountEditText
+                android:id="@+id/edit_count_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/receive_unit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/frxs_gray"
+                android:layout_marginLeft="@dimen/common_padding"
+                android:textSize="@dimen/order_info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_production_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_recp_count"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/common_margin"
+            android:paddingBottom="@dimen/common_margin">
+
+            <LinearLayout
+                android:id="@+id/ll_start_date"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/production_date"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            <TextView
+                android:id="@+id/production_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/common_padding"
+                android:drawableRight="@mipmap/icon_modified"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ic_start_del"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/common_padding"
+                android:paddingLeft="@dimen/common_padding"
+                android:drawableRight="@mipmap/icon_del"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_production_date"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/common_margin"
+            android:paddingBottom="@dimen/common_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/due_date"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            <TextView
+                android:id="@+id/due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/common_padding"
+                android:drawableRight="@mipmap/icon_modified"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_batch_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_due_date"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/batch_number"
+                android:textColor="@color/frxs_gray"
+                android:textSize="@dimen/order_info" />
+
+            <EditText
+                android:id="@+id/et_batch_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text"
+                android:maxLength="30"
+                android:textSize="@dimen/order_info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_batch_number"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/actual_received_remark"
+                android:textColor="@color/frxs_black_light"
+                android:textSize="@dimen/order_info" />
+
+            <EditText
+                android:id="@+id/et_received_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="限30个字符以内"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textSize="@dimen/order_info" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/frxs_gray_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/frxs_white"
+            android:paddingBottom="@dimen/fab_margin"
+            android:paddingTop="@dimen/fab_margin"
+            android:text="@string/confirm"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/frxs_white"
+            android:paddingBottom="@dimen/fab_margin"
+            android:paddingTop="@dimen/fab_margin"
+            android:text="@string/cancel"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirm_recv_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/frxs_white"
+            android:paddingBottom="@dimen/fab_margin"
+            android:paddingTop="@dimen/fab_margin"
+            android:text="@string/confirm_received"
+            android:textColor="@color/frxs_gray"
+            android:textSize="@dimen/order_info"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

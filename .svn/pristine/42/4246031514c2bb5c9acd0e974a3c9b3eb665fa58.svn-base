@@ -1,0 +1,78 @@
+package com.frxs.receipt.comms;
+
+/**
+ * 某某某类
+ * 
+ * @ClassName: GlobelDefines
+ * @Description: 定义全局常量
+ * @author: ewu
+ * @date: 2015-3-3
+ * 
+ */
+public class GlobelDefines
+{
+	
+	public static final String PREFS_NAME = "MyFrefsFile";
+	
+	public static final String KEY_USER = "key_user";
+	
+	public static final String KEY_FIRST_ENTER = "key_first_enter";
+	
+	public static final String KEY_ENVIRONMENT = "key_environment";
+
+	public static final String KEY_USER_ACCOUNT = "key_user_account";
+
+	public static final String KEY_DOWNLOAD_ID = "key_download_id";
+
+	/**
+	 * 商米红外线扫码监听广播来获取扫码结果
+	 */
+	public static final String ACTION_DATA_CODE_RECEIVED = "com.sunmi.scanner.ACTION_DATA_CODE_RECEIVED";
+
+	public static final String DATA = "data";
+
+	/**
+	 * 二维码扫描搜索
+	 */
+	public static final int REQ_CODE_SCAN = 100;
+
+	/**
+	 * 订单详情 requestCode
+	 */
+	public static final int REQ_CODE_ORDER_DETAIL = 101;
+
+	/**
+	 * 商品搜索 requestCode
+	 */
+	public static final int REQ_CODE_SEARCH_PRODUCT= 102;
+
+	/**
+	 * 从多规格产品setResult ResultCode
+	 */
+	public static final int RESULT_CODE_SKU = 200;
+
+	/**
+	 * 网络请求成功
+	 */
+	public static final String FLAG_SUCCESS = "SUCCESS";// "FAIL",
+	
+	/**
+	 * 网络请求失败
+	 */
+	public static final String FLAG_FAIL = "FAIL";// "FAIL",
+
+	/**
+	 * GPS请求
+	 */
+	public static final int REQ_GPS_CODE = 103;
+
+
+	public static final String SP_USERNAME = "sp_username";
+	
+	
+	public static final String SP_PASSWORD = "sp_password";
+	
+	public static String INSTOCK = "0";// 正常（不缺货）
+	
+	public static String OUTSTOCK = "1";// 缺货
+}
